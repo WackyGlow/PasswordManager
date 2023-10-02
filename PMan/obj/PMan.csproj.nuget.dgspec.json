@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\School Work\\PasswordManager\\PMan\\PMan.csproj",
         "projectName": "PMan",
         "projectPath": "C:\\School Work\\PasswordManager\\PMan\\PMan.csproj",
-        "packagesPath": "C:\\Users\\stamp\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
         "outputPath": "C:\\School Work\\PasswordManager\\PMan\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
@@ -18,7 +18,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\stamp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -30,7 +30,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -174,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -237,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -301,7 +300,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -360,11 +359,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.10, 7.0.10]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.10, 7.0.10]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -372,7 +371,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.10, 7.0.10]"
             }
           ],
           "frameworkReferences": {
@@ -392,7 +391,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
