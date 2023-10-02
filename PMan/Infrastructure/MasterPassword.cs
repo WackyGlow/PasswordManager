@@ -8,5 +8,6 @@ namespace PMan.Infrastructure
 {
     internal class MasterPassword
     {
+        public string MasterPassword { get; set; }
     }
 }
