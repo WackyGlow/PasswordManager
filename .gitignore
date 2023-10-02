@@ -1749,3 +1749,4 @@ PMan/obj/PMan.csproj.nuget.dgspec.json
 PMan/obj/PMan.csproj.nuget.g.props
 PMan/obj/project.assets.json
 PMan/obj/project.nuget.cache
+.vs/PasswordManager/DesignTimeBuild/.dtbcache.v2
