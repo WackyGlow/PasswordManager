@@ -335,3 +335,5 @@ C:\School Work\PasswordManager\Pman\obj\Debug\net7.0-windows10.0.19041.0\win10-x
 C:\School Work\PasswordManager\Pman\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\School Work\PasswordManager\Pman\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\School Work\PasswordManager\Pman\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Konscious.Security.Cryptography.Argon2.dll
+C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Konscious.Security.Cryptography.Blake2.dll

@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-02T13:48:08.149</Modified>
+      <Modified>2023-10-02T18:09:46.247</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-02T13:48:07.904</Modified>
+      <Modified>2023-10-02T18:09:45.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.runtimeconfig.json">
       <PackagePath>PMan.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-02T13:48:07.719</Modified>
+      <Modified>2023-10-02T18:09:45.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.dll">
       <PackagePath>PMan.dll</PackagePath>
-      <Modified>2023-10-02T13:48:06.694</Modified>
+      <Modified>2023-10-02T18:09:43.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PMan.exe</PackagePath>
-      <Modified>2023-10-02T13:48:06.709</Modified>
+      <Modified>2023-10-02T18:09:43.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.deps.json">
       <PackagePath>PMan.deps.json</PackagePath>
-      <Modified>2023-10-02T13:48:07.611</Modified>
+      <Modified>2023-10-02T18:09:45.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -809,6 +809,14 @@
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\konscious.security.cryptography.argon2\1.3.0\lib\net6.0\Konscious.Security.Cryptography.Argon2.dll">
+      <PackagePath>Konscious.Security.Cryptography.Argon2.dll</PackagePath>
+      <Modified>2022-05-20T02:37:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\konscious.security.cryptography.blake2\1.1.0\lib\net6.0\Konscious.Security.Cryptography.Blake2.dll">
+      <PackagePath>Konscious.Security.Cryptography.Blake2.dll</PackagePath>
+      <Modified>2022-05-20T02:37:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.data.sqlite.core\7.0.11\lib\net6.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>

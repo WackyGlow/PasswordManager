@@ -12,6 +12,6 @@ public partial class NewUserPage : ContentPage
 
     private void OnCreateClicked(object sender, EventArgs e)
     {
-
+        
     }
 }
