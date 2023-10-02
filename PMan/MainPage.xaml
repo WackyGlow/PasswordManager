@@ -3,39 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMan.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    
+    
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+    <Grid>
+       
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Header -->
+            <RowDefinition Height="*"/>
+            <!-- Content -->
+            <RowDefinition Height="Auto"/>
+            <!-- Footer -->
+        </Grid.RowDefinitions>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+        <!-- Header -->
+        <BoxView Grid.Row="0" Color="#007ACC" HeightRequest="75"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+        <!-- Content -->
+        <StackLayout Grid.Row="1" Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="" FontSize="24" HorizontalOptions="Center"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Enter Master Password" IsPassword="True" WidthRequest="200" HorizontalOptions="Center"/>
+            <!-- Center the "Login" button horizontally and vertically -->
+            <Button Text="Login" Clicked="OnLoginClicked" BackgroundColor="#007ACC" TextColor="White" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+        </StackLayout>
+
+        <!-- Footer -->
+        <BoxView Grid.Row="2" Color="#007ACC" HeightRequest="75"/>
+    </Grid>
+
 
 </ContentPage>
