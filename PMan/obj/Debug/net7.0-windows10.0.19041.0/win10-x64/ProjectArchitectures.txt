@@ -1,0 +1,1 @@
+C:\School Work\PasswordManager\Pman\PMan.csproj;x64

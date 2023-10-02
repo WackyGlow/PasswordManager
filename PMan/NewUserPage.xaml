@@ -3,10 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMan.NewUserPage"
              Title="NewUserPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Header -->
+            <RowDefinition Height="*"/>
+            <!-- Content -->
+            <RowDefinition Height="Auto"/>
+            <!-- Footer -->
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <BoxView Grid.Row="0" Color="#007ACC" HeightRequest="75"/>
+
+        <!-- Content -->
+        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Center">
+            <!-- Background Image -->
+            <Image Source="main_logo.png" Aspect="AspectFit" IsVisible="True"
+                   HeightRequest="200" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <!-- Login Form -->
+            <StackLayout Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="Password Manager" FontSize="24" FontAttributes="Bold" FontFamily="Arial" HorizontalOptions="Center"/>
+                <Entry x:Name="PasswordEntry" Placeholder="Enter New Master Password" IsPassword="True" WidthRequest="200" HorizontalOptions="Center"/>
+                <Button Text="Create" Clicked="OnCreateClicked" BackgroundColor="#007ACC" TextColor="White" WidthRequest="200" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <BoxView WidthRequest="150" Color="White" IsVisible="true"/>
+
+        </StackLayout>
+
+        <!-- Footer -->
+        <BoxView Grid.Row="2" Color="#007ACC" HeightRequest="75"/>
+    </Grid>
 </ContentPage>
