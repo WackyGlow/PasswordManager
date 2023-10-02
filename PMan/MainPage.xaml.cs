@@ -8,9 +8,9 @@
             Shell.SetNavBarIsVisible(this, false);
         }
 
-        private void OnLoginClicked(object sender, EventArgs e)
+        private async void OnLoginClicked(object sender, EventArgs e)
         {
-          
+            await Navigation.PushAsync(new PasswordPage());
         }
 
         private async void OnCreateClicked(object sender, EventArgs e)
