@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-02T12:18:42.705</Modified>
+      <Modified>2023-10-02T13:48:08.149</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-02T12:18:42.474</Modified>
+      <Modified>2023-10-02T13:48:07.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.runtimeconfig.json">
       <PackagePath>PMan.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-02T12:18:42.420</Modified>
+      <Modified>2023-10-02T13:48:07.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.dll">
       <PackagePath>PMan.dll</PackagePath>
-      <Modified>2023-10-02T12:18:41.578</Modified>
+      <Modified>2023-10-02T13:48:06.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PMan.exe</PackagePath>
-      <Modified>2023-10-02T12:18:41.721</Modified>
+      <Modified>2023-10-02T13:48:06.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.deps.json">
       <PackagePath>PMan.deps.json</PackagePath>
-      <Modified>2023-10-02T12:18:42.418</Modified>
+      <Modified>2023-10-02T13:48:07.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -810,6 +810,34 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.data.sqlite.core\7.0.11\lib\net6.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+      <Modified>2023-08-09T16:36:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.entityframeworkcore\7.0.11\lib\net6.0\Microsoft.EntityFrameworkCore.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
+      <Modified>2023-08-09T16:35:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.entityframeworkcore.abstractions\7.0.11\lib\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
+      <Modified>2023-08-09T16:35:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.entityframeworkcore.relational\7.0.11\lib\net6.0\Microsoft.EntityFrameworkCore.Relational.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
+      <Modified>2023-08-09T16:35:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\7.0.11\lib\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Sqlite.dll</PackagePath>
+      <Modified>2023-08-09T16:36:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.caching.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
+      <Modified>2022-10-18T16:15:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.caching.memory\7.0.0\lib\net7.0\Microsoft.Extensions.Caching.Memory.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Memory.dll</PackagePath>
+      <Modified>2022-10-18T16:15:48.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-10-18T16:15:22.000</Modified>
@@ -825,6 +853,10 @@
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2022-10-18T16:15:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.dependencymodel\7.0.0\lib\net7.0\Microsoft.Extensions.DependencyModel.dll">
+      <PackagePath>Microsoft.Extensions.DependencyModel.dll</PackagePath>
+      <Modified>2022-10-18T16:15:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -914,6 +946,18 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2023-01-10T20:21:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.core\2.1.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2023-01-10T20:18:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.4\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2023-01-10T20:18:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2023-05-31T20:12:36.000</Modified>
@@ -921,6 +965,10 @@
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.4\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2023-01-10T20:13:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.92\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -940,235 +988,235 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:03:04.941</Modified>
+      <Modified>2023-10-02T12:33:34.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:03:04.942</Modified>
+      <Modified>2023-10-02T12:33:34.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:03:04.942</Modified>
+      <Modified>2023-10-02T12:33:34.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:03:04.943</Modified>
+      <Modified>2023-10-02T12:33:34.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:03:04.943</Modified>
+      <Modified>2023-10-02T12:33:34.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-10-02T12:03:04.920</Modified>
+      <Modified>2023-10-02T12:03:03.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2023-10-02T12:03:04.921</Modified>
+      <Modified>2023-10-02T12:03:03.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-10-02T12:18:41.238</Modified>
+      <Modified>2023-10-02T12:33:34.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.392</Modified>
+      <Modified>2023-10-02T12:33:35.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.399</Modified>
+      <Modified>2023-10-02T12:33:35.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.406</Modified>
+      <Modified>2023-10-02T12:33:35.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.416</Modified>
+      <Modified>2023-10-02T12:33:35.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.457</Modified>
+      <Modified>2023-10-02T12:33:35.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.284</Modified>
+      <Modified>2023-10-02T12:33:34.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.286</Modified>
+      <Modified>2023-10-02T12:33:34.917</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.296</Modified>
+      <Modified>2023-10-02T12:33:34.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.288</Modified>
+      <Modified>2023-10-02T12:33:34.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.291</Modified>
+      <Modified>2023-10-02T12:33:34.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.268</Modified>
+      <Modified>2023-10-02T12:33:34.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.270</Modified>
+      <Modified>2023-10-02T12:33:34.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.281</Modified>
+      <Modified>2023-10-02T12:33:34.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.272</Modified>
+      <Modified>2023-10-02T12:33:34.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.274</Modified>
+      <Modified>2023-10-02T12:33:34.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.243</Modified>
+      <Modified>2023-10-02T12:33:34.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.245</Modified>
+      <Modified>2023-10-02T12:33:34.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.247</Modified>
+      <Modified>2023-10-02T12:33:34.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.250</Modified>
+      <Modified>2023-10-02T12:33:34.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.253</Modified>
+      <Modified>2023-10-02T12:33:34.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.255</Modified>
+      <Modified>2023-10-02T12:33:34.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.257</Modified>
+      <Modified>2023-10-02T12:33:34.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.266</Modified>
+      <Modified>2023-10-02T12:33:34.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.260</Modified>
+      <Modified>2023-10-02T12:33:34.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.262</Modified>
+      <Modified>2023-10-02T12:33:34.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.323</Modified>
+      <Modified>2023-10-02T12:33:34.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.326</Modified>
+      <Modified>2023-10-02T12:33:34.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.330</Modified>
+      <Modified>2023-10-02T12:33:34.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.335</Modified>
+      <Modified>2023-10-02T12:33:34.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.345</Modified>
+      <Modified>2023-10-02T12:33:34.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.309</Modified>
+      <Modified>2023-10-02T12:33:34.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.311</Modified>
+      <Modified>2023-10-02T12:33:34.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.313</Modified>
+      <Modified>2023-10-02T12:33:34.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.315</Modified>
+      <Modified>2023-10-02T12:33:34.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.320</Modified>
+      <Modified>2023-10-02T12:33:34.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.297</Modified>
+      <Modified>2023-10-02T12:33:34.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.299</Modified>
+      <Modified>2023-10-02T12:33:34.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.301</Modified>
+      <Modified>2023-10-02T12:33:34.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.304</Modified>
+      <Modified>2023-10-02T12:33:34.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.307</Modified>
+      <Modified>2023-10-02T12:33:34.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.349</Modified>
+      <Modified>2023-10-02T12:33:35.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.353</Modified>
+      <Modified>2023-10-02T12:33:35.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.358</Modified>
+      <Modified>2023-10-02T12:33:35.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.366</Modified>
+      <Modified>2023-10-02T12:33:35.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.386</Modified>
+      <Modified>2023-10-02T12:33:35.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.239</Modified>
+      <Modified>2023-10-02T12:33:34.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.245</Modified>
+      <Modified>2023-10-02T12:33:34.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.254</Modified>
+      <Modified>2023-10-02T12:33:34.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.268</Modified>
+      <Modified>2023-10-02T12:33:34.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-10-02T12:18:41.305</Modified>
+      <Modified>2023-10-02T12:33:34.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\main_logo.scale-100.png">
       <PackagePath>main_logo.scale-100.png</PackagePath>

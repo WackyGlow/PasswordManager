@@ -13,5 +13,4 @@ public partial class NewUserPage : ContentPage
     {
 
     }
-
 }
