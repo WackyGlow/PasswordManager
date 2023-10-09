@@ -6,5 +6,4 @@ public class Password
     public string Website { get; set; }
     public string HashedLogin { get; set; }
     public string HashedPassword { get; set; }
-    public int HashedMasterPassword { get; set; }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -9,15 +10,32 @@ namespace PMan
 {
     internal class AesEncryptionHelper
     {
-        private const string Key = "YourSecretKey"; // Replace with your secret key (should be a 16, 24, or 32 character string)
-        private const string IV = "YourIVValue";    // Replace with your IV (should be a 16 character string)
+        private static string _key;
+        private static string _iv;
+        private readonly KeyIvCollection _ctx;
 
-        public static string Encrypt(string plainText)
+        public AesEncryptionHelper(string key, string iv)
+        {
+            _ctx = new KeyIvCollection();
+            var checksum = _ctx.GetKeys();
+            if (checksum != null)
+            {
+                _key = checksum.HashKey;
+                _iv = checksum.InitVect;
+            }
+            else
+            {
+                _key = key;
+                _iv = iv;
+            }
+        }
+
+        public string Encrypt(string plainText)
         {
             using (AesCryptoServiceProvider aesAlg = new AesCryptoServiceProvider())
             {
-                aesAlg.Key = Encoding.UTF8.GetBytes(Key);
-                aesAlg.IV = Encoding.UTF8.GetBytes(IV);
+                aesAlg.Key = Encoding.UTF8.GetBytes(_key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(_iv);
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
@@ -35,12 +53,12 @@ namespace PMan
             }
         }
 
-        public static string Decrypt(string cipherText)
+        public string Decrypt(string cipherText)
         {
             using (AesCryptoServiceProvider aesAlg = new AesCryptoServiceProvider())
             {
-                aesAlg.Key = Encoding.UTF8.GetBytes(Key);
-                aesAlg.IV = Encoding.UTF8.GetBytes(IV);
+                aesAlg.Key = Encoding.UTF8.GetBytes(_key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(_iv);
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 

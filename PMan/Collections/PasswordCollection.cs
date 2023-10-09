@@ -30,10 +30,24 @@ public class PasswordCollection
             return passwords;
     }
 
+    public int GetPasswordsAmount()
+    {
+        var passwords = _passwords.Find<Password>(pw => true).ToList().Count;
+        return passwords;
+    }
+
 
     public void AddNewPass(string website, string loginname, string password)
     {
+        var obj = new Password()
+        {
+            Id = GetPasswordsAmount(),
+            Website = website,
+            HashedLogin = loginname,
+            HashedPassword = password
+        };
 
+        _passwords.InsertOne(obj);
     }
 
 }
