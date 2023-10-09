@@ -7,21 +7,23 @@ using System.Threading.Tasks;
 
 namespace PMan
 {
-    internal class PasswordHasher
-    {
-        private string HashMasterPassword(string EncryptPassword, string masterPassword)
+    class PasswordHasher
+    {   
+
+
+        public string HashMasterPassword(string EncryptPassword)
         {
             // Convert the password string and master password to bytes
             byte[] passwordBytes = Encoding.UTF8.GetBytes(EncryptPassword);
-            byte[] masterPasswordBytes = Encoding.UTF8.GetBytes(masterPassword);
 
             // Create an instance of Argon2id
             using (var hasher = new Argon2id(passwordBytes))
             {
                 // Set the salt to the master password bytes
-                hasher.Salt = masterPasswordBytes;
+                hasher.Salt = passwordBytes;
                 hasher.DegreeOfParallelism = 4; // Adjust this according to your system's capabilities
                 hasher.MemorySize = 65536; // Adjust this according to your system's capabilities
+                hasher.Iterations = 1;
 
                 // Hash the password
                 byte[] hashBytes = hasher.GetBytes(32); // You can adjust the output size as needed
@@ -33,7 +35,7 @@ namespace PMan
             }
         }
 
-        private bool VerifyPassword(string inputPassword, string storedHash, string masterPassword)
+        public bool VerifyMasterPassword(string inputPassword, string storedHash, string masterPassword)
         {
             // Convert the input password string, master password, and stored hash to bytes
             byte[] inputPasswordBytes = Encoding.UTF8.GetBytes(inputPassword);
@@ -47,6 +49,7 @@ namespace PMan
                 hasher.Salt = masterPasswordBytes;
                 hasher.DegreeOfParallelism = 4; // Adjust this according to your system's capabilities
                 hasher.MemorySize = 65536; // Adjust this according to your system's capabilities
+                hasher.Iterations = 1;
 
                 // Hash the input password
                 byte[] newHashBytes = hasher.GetBytes(32); // You can adjust the output size as needed

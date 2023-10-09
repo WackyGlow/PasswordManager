@@ -8,6 +8,7 @@ namespace PMan.Entity
 {
     class HashedMPasswordEntity
     {
+        public int Id { get; set; }
         public string HashedMasterPassword { get; set; }
     }
 }

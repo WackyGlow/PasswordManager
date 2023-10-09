@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-02T18:09:46.247</Modified>
+      <Modified>2023-10-09T02:41:15.186</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-02T18:09:45.944</Modified>
+      <Modified>2023-10-09T02:41:14.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.runtimeconfig.json">
       <PackagePath>PMan.runtimeconfig.json</PackagePath>
-      <Modified>2023-10-02T18:09:45.625</Modified>
+      <Modified>2023-10-08T19:33:01.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.dll">
       <PackagePath>PMan.dll</PackagePath>
-      <Modified>2023-10-02T18:09:43.947</Modified>
+      <Modified>2023-10-09T02:41:14.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PMan.exe</PackagePath>
-      <Modified>2023-10-02T18:09:43.969</Modified>
+      <Modified>2023-10-09T02:41:14.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.deps.json">
       <PackagePath>PMan.deps.json</PackagePath>
-      <Modified>2023-10-02T18:09:45.470</Modified>
+      <Modified>2023-10-08T20:09:28.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -810,6 +810,18 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\awssdk.core\3.7.100.14\lib\netcoreapp3.1\AWSSDK.Core.dll">
+      <PackagePath>AWSSDK.Core.dll</PackagePath>
+      <Modified>2022-11-09T16:47:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\awssdk.securitytoken\3.7.100.14\lib\netcoreapp3.1\AWSSDK.SecurityToken.dll">
+      <PackagePath>AWSSDK.SecurityToken.dll</PackagePath>
+      <Modified>2022-11-09T16:47:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\dnsclient\1.6.1\lib\net5.0\DnsClient.dll">
+      <PackagePath>DnsClient.dll</PackagePath>
+      <Modified>2022-06-10T20:37:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\konscious.security.cryptography.argon2\1.3.0\lib\net6.0\Konscious.Security.Cryptography.Argon2.dll">
       <PackagePath>Konscious.Security.Cryptography.Argon2.dll</PackagePath>
       <Modified>2022-05-20T02:37:38.000</Modified>
@@ -954,6 +966,30 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\mongodb.bson\2.21.0\lib\netstandard2.1\MongoDB.Bson.dll">
+      <PackagePath>MongoDB.Bson.dll</PackagePath>
+      <Modified>2023-08-10T16:12:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\mongodb.driver\2.21.0\lib\netstandard2.1\MongoDB.Driver.dll">
+      <PackagePath>MongoDB.Driver.dll</PackagePath>
+      <Modified>2023-08-10T16:12:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\mongodb.driver.core\2.21.0\lib\netstandard2.1\MongoDB.Driver.Core.dll">
+      <PackagePath>MongoDB.Driver.Core.dll</PackagePath>
+      <Modified>2023-08-10T16:12:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\mongodb.libmongocrypt\1.8.0\lib\netstandard2.1\MongoDB.Libmongocrypt.dll">
+      <PackagePath>MongoDB.Libmongocrypt.dll</PackagePath>
+      <Modified>2023-06-01T17:28:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sharpcompress\0.30.1\lib\net5.0\SharpCompress.dll">
+      <PackagePath>SharpCompress.dll</PackagePath>
+      <Modified>2021-11-22T09:21:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\snappier\1.0.0\lib\net5.0\Snappier.dll">
+      <PackagePath>Snappier.dll</PackagePath>
+      <Modified>2021-01-23T17:43:32.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
       <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
       <Modified>2023-01-10T20:21:34.000</Modified>
@@ -966,6 +1002,10 @@
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
       <Modified>2023-01-10T20:18:52.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\zstdsharp.port\0.6.2\lib\net6.0\ZstdSharp.dll">
+      <PackagePath>ZstdSharp.dll</PackagePath>
+      <Modified>2022-08-02T19:04:30.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2023-05-31T20:12:36.000</Modified>
@@ -973,6 +1013,10 @@
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\mongodb.libmongocrypt\1.8.0\runtimes\win\native\mongocrypt.dll">
+      <PackagePath>mongocrypt.dll</PackagePath>
+      <Modified>2023-05-09T13:04:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.4\runtimes\win-x64\native\e_sqlite3.dll">
       <PackagePath>e_sqlite3.dll</PackagePath>
