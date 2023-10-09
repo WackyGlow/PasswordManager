@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using PMan.Entity;
 
 namespace PMan
 {
@@ -12,7 +13,7 @@ namespace PMan
     {
 
 
-        public  string HashMasterPassword(string masterPassword)
+        public  HashedMPasswordEntity HashMasterPassword(string masterPassword, HashedMPasswordEntity obj)
         {
             // Convert the master password string to bytes
             byte[] passwordBytes = Encoding.UTF8.GetBytes(masterPassword);
@@ -41,33 +42,42 @@ namespace PMan
                 // Convert the hash bytes to a hexadecimal string
                 string hashHex = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
 
-                return hashHex;
+                obj.HashedMasterPassword= hashHex;
+                obj.salt = salt;
+
+                return obj;
             }
         }
 
-        public bool VerifyMasterPassword(string inputPassword, string storedHash, string masterPassword)
+        public bool VerifyMasterPassword(string masterPassword, HashedMPasswordEntity storedHash)
         {
-            // Convert the input password string, master password, and stored hash to bytes
-            byte[] inputPasswordBytes = Encoding.UTF8.GetBytes(inputPassword);
-            byte[] masterPasswordBytes = Encoding.UTF8.GetBytes(masterPassword);
-            byte[] storedHashBytes = StringToByteArray(storedHash); // Convert the stored hash string to bytes
+            // Convert the provided master password string to bytes
+            byte[] passwordBytes = Encoding.UTF8.GetBytes(masterPassword);
 
-            // Create an instance of Argon2id with the same parameters as during hashing
-            using (var hasher = new Argon2id(inputPasswordBytes))
+            // Retrieve the stored salt
+            byte[] salt = storedHash.salt;
+
+            // Create an Argon2id instance with the same parameters
+            using (var hasher = new Argon2id(passwordBytes))
             {
-                // Set the salt to the master password bytes
-                hasher.Salt = masterPasswordBytes;
-                hasher.DegreeOfParallelism = 4; // Adjust this according to your system's capabilities
-                hasher.MemorySize = 65536; // Adjust this according to your system's capabilities
+                // Set the salt
+                hasher.Salt = salt;
+                hasher.DegreeOfParallelism = 4; // Use the same parameters as during hashing
+                hasher.MemorySize = 65536;
                 hasher.Iterations = 1;
 
-                // Hash the input password
-                byte[] newHashBytes = hasher.GetBytes(32); // You can adjust the output size as needed
+                // Compute the hash
+                byte[] computedHashBytes = hasher.GetBytes(32);
 
-                // Compare the newly generated hash with the stored hash
-                return ByteArrayToHexString(newHashBytes) == storedHash;
+                // Convert the computed hash bytes to a hexadecimal string
+                string computedHashHex = BitConverter.ToString(computedHashBytes).Replace("-", "").ToLower();
+
+                // Compare the computed hash with the stored hash
+                return storedHash.HashedMasterPassword.Equals(computedHashHex);
             }
         }
+
+
 
         // Utility function to convert a hexadecimal string to byte array
         private byte[] StringToByteArray(string hex)

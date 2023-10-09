@@ -6,6 +6,7 @@ namespace PMan;
 public class PasswordCollection
 {
     private readonly IMongoCollection<Password> _passwords;
+    private PasswordHasher _passwordHasher;
 
     public PasswordCollection()
     {
@@ -17,6 +18,9 @@ public class PasswordCollection
 
         // Initialize the collection for users
         _passwords = database.GetCollection<Password>("PasswordCollection");
+
+
+        _passwordHasher = new PasswordHasher();
     }
 
 
@@ -25,6 +29,5 @@ public class PasswordCollection
             var passwords = _passwords.Find<Password>(pw => true).ToList();
             return passwords;
     }
-
 
 }

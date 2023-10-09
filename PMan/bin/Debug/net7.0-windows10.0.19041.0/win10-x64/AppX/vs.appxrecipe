@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-09T12:44:24.817</Modified>
+      <Modified>2023-10-09T17:58:10.142</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-09T12:44:24.544</Modified>
+      <Modified>2023-10-09T17:58:09.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.runtimeconfig.json">
       <PackagePath>PMan.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.dll">
       <PackagePath>PMan.dll</PackagePath>
-      <Modified>2023-10-09T12:44:23.289</Modified>
+      <Modified>2023-10-09T17:58:09.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PMan.exe</PackagePath>
-      <Modified>2023-10-09T12:44:23.313</Modified>
+      <Modified>2023-10-09T17:58:09.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.deps.json">
       <PackagePath>PMan.deps.json</PackagePath>

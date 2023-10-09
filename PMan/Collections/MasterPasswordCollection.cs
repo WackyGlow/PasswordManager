@@ -26,20 +26,39 @@ public class MasterPasswordCollection
     }
 
 
+
     public int GetLastEntryId()
     {
         var highestIdEntry = _passwords.Find(pw => true).ToList().Count;
         return highestIdEntry;
     }
 
+    public int GetCurrentId()
+    {
+        var currentId = _passwords.Find(pw => true).ToList().Count - 1; return currentId;
+    }
+
+
+
     public void NewMPassword(string MPassword)
     {
         var mPass_Obj = new HashedMPasswordEntity
         {
-            Id = GetLastEntryId(),
-            HashedMasterPassword = MPassword
+            Id = GetLastEntryId()
         };
 
-        _passwords.InsertOne(mPass_Obj);
+        var objEntity = _passwordHasher.HashMasterPassword(MPassword,mPass_Obj);
+
+
+        _passwords.InsertOne(objEntity);
     }
+
+    public bool Login(string masterpassword)
+    {
+        var obj = _passwords.Find(pw => pw.Id == 1).FirstOrDefault();
+        return _passwordHasher.VerifyMasterPassword(masterpassword, obj);
+    }
+
+
+
 }
