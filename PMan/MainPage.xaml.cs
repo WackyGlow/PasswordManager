@@ -16,7 +16,7 @@
         private async void OnCreateClicked(object sender, EventArgs e)
         {
             // Navigate to the create page here
-            await Navigation.PushAsync(new NewUserPage());
+            await Navigation.PushAsync(new NewUserPage(), false);
         }
 
     }
