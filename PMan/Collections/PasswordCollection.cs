@@ -30,4 +30,10 @@ public class PasswordCollection
             return passwords;
     }
 
+
+    public void AddNewPass(string website, string loginname, string password)
+    {
+
+    }
+
 }

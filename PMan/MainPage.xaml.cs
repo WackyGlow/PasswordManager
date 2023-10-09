@@ -22,7 +22,7 @@
             {
                 if (_mp.Login(password))
                 {
-                    await DisplayAlert("Alert", "VERIFIED!", "OK");
+                    await Navigation.PushAsync(new PasswordPage());
                 }
                 else
                 {

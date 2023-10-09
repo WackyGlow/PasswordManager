@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-09T17:58:10.142</Modified>
+      <Modified>2023-10-09T19:09:06.619</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-09T17:58:09.967</Modified>
+      <Modified>2023-10-09T19:09:06.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.runtimeconfig.json">
       <PackagePath>PMan.runtimeconfig.json</PackagePath>
@@ -44,15 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.dll">
       <PackagePath>PMan.dll</PackagePath>
-      <Modified>2023-10-09T17:58:09.277</Modified>
+      <Modified>2023-10-09T19:09:05.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PMan.exe</PackagePath>
-      <Modified>2023-10-09T17:58:09.282</Modified>
+      <Modified>2023-10-09T19:09:05.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\School Work\PasswordManager\PMan\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\PMan.deps.json">
       <PackagePath>PMan.deps.json</PackagePath>
-      <Modified>2023-10-09T11:22:34.938</Modified>
+      <Modified>2023-10-09T18:41:08.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rasmu\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

@@ -25,4 +25,10 @@ public partial class PasswordPage : ContentPage
 
     }
 
+
+    private async void OnAddClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new StoreNewPassPage());
+    }
+
 }
