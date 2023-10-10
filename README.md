@@ -30,6 +30,14 @@ time-memory trade-off attacks, and side-channel attacks. Argon2id's core strengt
 adaptive parallelism, data-dependent passes, and constant-time implementations, 
 making it a formidable choice for safeguarding passwords and sensitive information in a world where data breaches and cyber threats are ever-present concerns.
 
+##### Strengths
+Argon2id is a robust password hashing algorithm that is resistant to various attacks, including brute force, dictionary attacks, and rainbow table attacks. 
+It uses a variable amount of memory and processing time, making it computationally expensive for attackers.
+##### Benefits
+Storing a hashed master password in MongoDB ensures that even if the database is compromised, the attacker cannot easily retrieve the original master password.
+##### Weakness 
+The strength of Argon2id depends on the chosen parameters (e.g., time cost, memory cost). Inadequate configuration of these parameters can weaken the protection.
+
 #### AES
 AES, or Advanced Encryption Standard, is a widely adopted and respected symmetric-key encryption algorithm. 
 It's employed to secure sensitive data in various applications, from data storage to communication protocols. 
@@ -39,9 +47,19 @@ which involves multiple rounds of complex operations, including substitution, pe
 AES has been extensively analyzed and tested, 
 proving its resistance to attacks like brute force and cryptanalysis. 
 Its versatility and efficiency make it the de facto choice for data encryption across diverse domains.
+##### Strengths
+AES (Advanced Encryption Standard) is a widely recognized and trusted symmetric encryption algorithm. When configured and used correctly, it provides strong confidentiality for stored passwords.
+##### Benefits
+Encrypting normal passwords before storing them in MongoDB protects the user's sensitive data from unauthorized access, even if the database is compromised.
+##### Weakness 
+The security of AES depends on the strength of the encryption key. If the encryption key is weak or poorly managed, it can lead to vulnerabilities. 
+and considering due to time restraint, the same key is used for all which is very bad security.
 
-##### How it works
-** Master Password Hashing (Argon2id): **
-	1. Strength: Argon2id is a robust password hashing algorithm that is resistant to various attacks, including brute force, dictionary attacks, and rainbow table attacks. It uses a variable amount of memory and processing time, making it computationally expensive for attackers.
-	2. Benefit: Storing a hashed master password in MongoDB ensures that even if the database is compromised, the attacker cannot easily retrieve the original master password.
-	3. Weakness: The strength of Argon2id depends on the chosen parameters (e.g., time cost, memory cost). Inadequate configuration of these parameters can weaken the protection.
+### How it works
+#### User Registration
+The user sets a master password, which is then securely hashed using Argon2id. The hashed master password is stored in MongoDB.
+#### Storing Normal Passwords
+When a user saves a password, it is encrypted using AES with a unique encryption key. The encrypted password is then stored in the database.
+#### Retrieving Normal Passwords
+o retrieve a password, the user provides the master password, which is hashed and compared to the stored hash in MongoDB. If they match, the master password is considered valid. 
+The encryption key for the user's data is derived from the master password, which is then used to decrypt and display the stored passwords.
