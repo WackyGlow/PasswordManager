@@ -47,6 +47,8 @@ time-memory trade-off attacks, and side-channel attacks. Argon2id's core strengt
 adaptive parallelism, data-dependent passes, and constant-time implementations, 
 making it a formidable choice for safeguarding passwords and sensitive information in a world where data breaches and cyber threats are ever-present concerns.
 
+<img src="https://www.mdpi.com/applsci/applsci-13-09295/article_deploy/html/images/applsci-13-09295-g001.png" alt="Alt Text">
+
 ##### Strengths
 Argon2id is a robust password hashing algorithm that is resistant to various attacks, including brute force, dictionary attacks, and rainbow table attacks. 
 It uses a variable amount of memory and processing time, making it computationally expensive for attackers.
@@ -64,6 +66,9 @@ which involves multiple rounds of complex operations, including substitution, pe
 AES has been extensively analyzed and tested, 
 proving its resistance to attacks like brute force and cryptanalysis. 
 Its versatility and efficiency make it the de facto choice for data encryption across diverse domains.
+
+<img src="https://assets.website-files.com/5ff66329429d880392f6cba2/618e3ef1d4fd65b58fac771b_AES%20design.png" alt="Alt Text">
+
 ##### Strengths
 AES (Advanced Encryption Standard) is a widely recognized and trusted symmetric encryption algorithm. When configured and used correctly, it provides strong confidentiality for stored passwords.
 ##### Benefits
