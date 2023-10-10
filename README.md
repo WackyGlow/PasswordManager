@@ -1,5 +1,28 @@
 # PasswordManager
 
+## Table of Contents
+
+1. [PasswordManager](#passwordmanager)
+2. [Starting the Program](#starting-the-program)
+3. [The Password Page](#the-password-page)
+4. [Discussion of the Product's Security](#discussion-of-the-products-security)
+   - [Encryption Technologies Used](#encryption-technologies-used)
+     - [Argon2id](#argon2id)
+       - [Strengths](#strengths)
+       - [Benefits](#benefits)
+       - [Weakness](#weakness)
+     - [AES](#aes)
+       - [Strengths](#strengths-1)
+       - [Benefits](#benefits-1)
+       - [Weakness](#weakness-1)
+   - [How It Works](#how-it-works)
+     - [User Registration](#user-registration)
+     - [Storing Normal Passwords](#storing-normal-passwords)
+     - [Retrieving Normal Passwords](#retrieving-normal-passwords)
+   - [Flaws and Potential Improvements](#flaws-and-potential-improvements)
+5. [Conclusion](#conclusion)
+
+
 Compulsory Project for Rasmus Thyregod Kristensen, PBSWe23: Second Semester Security Course.
 
 You can start the program by clicking on the hollow green arrow: <img src="https://i.gyazo.com/993a800b3e576ad36234bcc81e94a516.png" alt="Alt Text">
