@@ -8,9 +8,17 @@ You will be greeted by the login screen, right now only 1 master password can ex
 <img src="https://i.gyazo.com/03b84f1cb147738fda571bddb29941b9.png" alt="Alt Text">
 
 When logged in you will see the password page, this is where the passwords will be shown decrypted as they are stored encrypted in a MongoDB.
-From here you can add new passwords or click on the small arrow in the top left cornor to log out.
 
 <img src="https://i.gyazo.com/d64085b6df575760e6c86cabe9f30576.png" alt="Alt Text">
 
+From here you can add new passwords or click on the small arrow in the top left cornor to log out.
+
 <img src="https://i.gyazo.com/4f5dd5c57f7c93203658804455ad83c6.png" alt="Alt Text">
+
+You can type in the website, login info and password info into the text fields and hit the create button. The code behind the white & blue GUI encrypts both the login info and the password before storing them in the DB.
+
+
+## Encryption Technologies Used.
+
+
 
