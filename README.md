@@ -17,8 +17,31 @@ From here you can add new passwords or click on the small arrow in the top left 
 
 You can type in the website, login info and password info into the text fields and hit the create button. The code behind the white & blue GUI encrypts both the login info and the password before storing them in the DB.
 
+## Discussion of the products security.
+Password managers play a crucial role in modern cybersecurity, providing a convenient and secure way for users to store and manage their passwords. 
+This discussion focuses on the security mechanisms implemented in a custom password manager, analyzing their strengths, weaknesses, and potential areas for improvement.
+### Encryption Technologies Used
+#### Argon2id
+Argon2id is a highly secure password hashing algorithm designed to protect sensitive data, 
+particularly user passwords, from unauthorized access. 
+It stands as the victor of the Password Hashing Competition (PHC) due to its superior security features. 
+Combining elements from Argon2i and Argon2d, it offers robust resistance to various attack vectors, including GPU-based cracking, 
+time-memory trade-off attacks, and side-channel attacks. Argon2id's core strength lies in its memory-intensive processing, 
+adaptive parallelism, data-dependent passes, and constant-time implementations, 
+making it a formidable choice for safeguarding passwords and sensitive information in a world where data breaches and cyber threats are ever-present concerns.
 
-## Encryption Technologies Used.
+#### AES
+AES, or Advanced Encryption Standard, is a widely adopted and respected symmetric-key encryption algorithm. 
+It's employed to secure sensitive data in various applications, from data storage to communication protocols. 
+AES uses a block cipher with key lengths of 128, 192, or 256 bits, 
+providing a high level of security. Its strength stems from its substitution-permutation network structure, 
+which involves multiple rounds of complex operations, including substitution, permutation, and bitwise transformations. 
+AES has been extensively analyzed and tested, 
+proving its resistance to attacks like brute force and cryptanalysis. 
+Its versatility and efficiency make it the de facto choice for data encryption across diverse domains.
 
-
-
+##### How it works
+** Master Password Hashing (Argon2id): **
+	1. Strength: Argon2id is a robust password hashing algorithm that is resistant to various attacks, including brute force, dictionary attacks, and rainbow table attacks. It uses a variable amount of memory and processing time, making it computationally expensive for attackers.
+	2. Benefit: Storing a hashed master password in MongoDB ensures that even if the database is compromised, the attacker cannot easily retrieve the original master password.
+	3. Weakness: The strength of Argon2id depends on the chosen parameters (e.g., time cost, memory cost). Inadequate configuration of these parameters can weaken the protection.
