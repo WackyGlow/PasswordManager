@@ -3,6 +3,6 @@
 public class KeyEntity
 {
     public int Id { get; set; }
-    public string HashKey { get; set; }
-    public string InitVect { get; set; }
+    public Byte[] HashKey { get; set; }
+    public Byte[] InitVect { get; set; }
 }

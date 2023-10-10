@@ -8,8 +8,8 @@ public partial class StoreNewPassPage : ContentPage
     private readonly KeyIvCollection _keyIvCollection;
     private readonly AesEncryptionHelper _aesEncryptionHelper;
     private readonly AesKeyGenerator _aesKeyGenerator;
-    private readonly string key;
-    private readonly string iv;
+    private readonly Byte[] key;
+    private readonly Byte[] iv;
 	public StoreNewPassPage()
 	{
 		InitializeComponent();
@@ -19,15 +19,28 @@ public partial class StoreNewPassPage : ContentPage
         _keyIvCollection = new KeyIvCollection();
 
         _aesKeyGenerator = new AesKeyGenerator();
-        key = _aesKeyGenerator.GenerateKey();
-        iv = _aesKeyGenerator.GenerateIV();
+        var checksum = _keyIvCollection.GetKeys();
+
+        if (checksum != null)
+        {
+            key = _keyIvCollection.GetKeys().HashKey;
+            iv = _keyIvCollection.GetKeys().HashKey;
+        }
+        else
+        {
+            key = _aesKeyGenerator.GenerateKey();
+            iv = _aesKeyGenerator.GenerateIV();
+        }
+
+        
+        _keyIvCollection.InsertValues(key,iv);
 
         _aesEncryptionHelper = new AesEncryptionHelper(key, iv);
     }
 
 
 
-    private void OnCreateClicked(object sender, EventArgs e)
+    private async void OnCreateClicked(object sender, EventArgs e)
     {
         // Handle the create button click event here.
         string website = WebsiteEntry.Text;
@@ -39,6 +52,8 @@ public partial class StoreNewPassPage : ContentPage
         var encryptedPassword = _aesEncryptionHelper.Encrypt(password);
 
         _ctx.AddNewPass(website, encryptedLogin, encryptedPassword);
+
+        await Navigation.PopAsync();
 
     }
 }

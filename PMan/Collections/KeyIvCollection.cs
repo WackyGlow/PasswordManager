@@ -25,7 +25,7 @@ public class KeyIvCollection
     }
 
 
-    public void InsertValues(string key, string iv)
+    public void InsertValues(Byte[] key, Byte[] iv)
     {
 
         var checksum = GetKeys();

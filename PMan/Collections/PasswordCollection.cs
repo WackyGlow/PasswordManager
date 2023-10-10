@@ -7,6 +7,8 @@ public class PasswordCollection
 {
     private readonly IMongoCollection<Password> _passwords;
     private PasswordHasher _passwordHasher;
+    private AesEncryptionHelper _aes;
+    private readonly KeyIvCollection _keys;
 
     public PasswordCollection()
     {
@@ -21,18 +23,37 @@ public class PasswordCollection
 
 
         _passwordHasher = new PasswordHasher();
+        _keys = new KeyIvCollection();
+        _aes = new AesEncryptionHelper(_keys.GetKeys().HashKey, _keys.GetKeys().InitVect);
+
     }
 
 
-    public List<Password> GetAllPasswords()
+    public List<UnHashedPassword> GetAllPasswords()
     {
             var passwords = _passwords.Find<Password>(pw => true).ToList();
-            return passwords;
+            var decryptedList = new List<UnHashedPassword>();
+
+            foreach (var ent in passwords)
+            {
+                var decryptedlogin = new UnHashedPassword
+                {
+                    Id = ent.Id,
+                    Website = ent.Website,
+                    Login = _aes.Decrypt(ent.HashedLogin),
+                    Password = _aes.Decrypt(ent.HashedPassword)
+                };
+                decryptedList.Add(decryptedlogin);
+            }
+
+
+            return decryptedList;
     }
 
     public int GetPasswordsAmount()
     {
         var passwords = _passwords.Find<Password>(pw => true).ToList().Count;
+
         return passwords;
     }
 

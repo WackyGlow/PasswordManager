@@ -10,21 +10,25 @@ public class AesKeyGenerator
 
     }
 
-    public string GenerateKey()
+    public Byte[] GenerateKey()
     {
-        using (AesCryptoServiceProvider aesCrypto = new AesCryptoServiceProvider())
+        using (Aes aesAlg = Aes.Create())
         {
-            aesCrypto.GenerateKey();
-            return Convert.ToBase64String(aesCrypto.Key);
+            aesAlg.GenerateKey();
+            var _key = aesAlg.Key;
+            return _key;
         }
     }
 
-    public string GenerateIV()
+    public Byte[] GenerateIV()
     {
-        using (AesCryptoServiceProvider aesCrypto = new AesCryptoServiceProvider())
+        using (Aes aesAlg = Aes.Create())
         {
-            aesCrypto.GenerateIV();
-            return Convert.ToBase64String(aesCrypto.IV);
+            aesAlg.GenerateIV();
+            var _iv = aesAlg.IV;
+            return _iv;
         }
     }
+
+
 }

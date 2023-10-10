@@ -11,19 +11,25 @@ public partial class PasswordPage : ContentPage
 
 		InitializeComponent();
         Shell.SetNavBarIsVisible(this, false);
-
-        // Create a list of User objects
-        var userList = new List<Password>
-        {
-            new Password{ Website = "Example.com", HashedLogin = "user1", HashedPassword = "password1" },
-            new Password { Website = "SampleSite.com", HashedLogin = "user2", HashedPassword = "password2" },
-            // Add more User objects as needed
-        };
-
         // Set the list as the ItemsSource for the ListView
         UserListView.ItemsSource = _pw.GetAllPasswords();
 
     }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // This code will run when the page is about to be displayed
+        // Put your reload logic here
+        ReloadPageData();
+    }
+    private void ReloadPageData()
+    {
+        var _pw = new PasswordCollection();
+        UserListView.ItemsSource = _pw.GetAllPasswords();
+    }
+
 
 
     private async void OnAddClicked(object sender, EventArgs e)

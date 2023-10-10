@@ -1755,3 +1755,16 @@ PMan/obj/project.nuget.cache
 .vs/PasswordManager/DesignTimeBuild/.dtbcache.v2
 .vs/PasswordManager/FileContentIndex/a13a2afc-2a98-4986-9c9d-587214d3da95.vsidx
 .vs/PasswordManager/v17/.suo
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/XamlSaveStateFile.xml
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/refint/PMan.dll
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/ref/PMan.dll
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/PMan.pdb
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/PMan.dll
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/PMan.csproj.CoreCompileInputs.cache
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/intermediatexaml/PMan.pdb
+PMan/obj/Debug/net7.0-windows10.0.19041.0/win10-x64/intermediatexaml/PMan.dll
+.vs/PasswordManager/v17/.suo
+PMan/bin/Debug/net7.0-windows10.0.19041.0/win10-x64/PMan.pdb
+PMan/bin/Debug/net7.0-windows10.0.19041.0/win10-x64/PMan.dll
+PMan/bin/Debug/net7.0-windows10.0.19041.0/win10-x64/AppX/vs.appxrecipe
+PMan/bin/Debug/net7.0-windows10.0.19041.0/win10-x64/AppX/PMan.dll

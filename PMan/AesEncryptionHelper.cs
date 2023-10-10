@@ -10,11 +10,11 @@ namespace PMan
 {
     internal class AesEncryptionHelper
     {
-        private static string _key;
-        private static string _iv;
+        private static Byte[] _key;
+        private static Byte[] _iv;
         private readonly KeyIvCollection _ctx;
 
-        public AesEncryptionHelper(string key, string iv)
+        public AesEncryptionHelper(Byte[] key, Byte[] iv)
         {
             _ctx = new KeyIvCollection();
             var checksum = _ctx.GetKeys();
@@ -32,10 +32,10 @@ namespace PMan
 
         public string Encrypt(string plainText)
         {
-            using (AesCryptoServiceProvider aesAlg = new AesCryptoServiceProvider())
+            using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = Encoding.UTF8.GetBytes(_key);
-                aesAlg.IV = Encoding.UTF8.GetBytes(_iv);
+                aesAlg.Key = _key;
+                aesAlg.IV = _iv;
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
@@ -55,10 +55,10 @@ namespace PMan
 
         public string Decrypt(string cipherText)
         {
-            using (AesCryptoServiceProvider aesAlg = new AesCryptoServiceProvider())
+            using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = Encoding.UTF8.GetBytes(_key);
-                aesAlg.IV = Encoding.UTF8.GetBytes(_iv);
+                aesAlg.Key = _key;
+                aesAlg.IV = _iv;
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 
