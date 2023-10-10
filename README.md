@@ -63,3 +63,8 @@ When a user saves a password, it is encrypted using AES with a unique encryption
 #### Retrieving Normal Passwords
 o retrieve a password, the user provides the master password, which is hashed and compared to the stored hash in MongoDB. If they match, the master password is considered valid. 
 The encryption key for the user's data is derived from the master password, which is then used to decrypt and display the stored passwords.
+
+### Flaws and Potential Improvements
+ - Given all passwords are encrypted used the same key and IV is a big security flaw and should be improved if the time allowed.
+ - Master Password is hashed using Argon2id using itself as salt, which should be randomly generated instead and not stored in plaintext form.
+ - The encryption key derived from the master password should be stored securely and protected against potential attacks. Additionally, implementing a mechanism for changing the master password and re-encrypting all stored passwords would enhance security.
