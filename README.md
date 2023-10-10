@@ -61,10 +61,16 @@ The user sets a master password, which is then securely hashed using Argon2id. T
 #### Storing Normal Passwords
 When a user saves a password, it is encrypted using AES with a unique encryption key. The encrypted password is then stored in the database.
 #### Retrieving Normal Passwords
-o retrieve a password, the user provides the master password, which is hashed and compared to the stored hash in MongoDB. If they match, the master password is considered valid. 
+To retrieve a password, the user provides the master password, which is hashed and compared to the stored hash in MongoDB. If they match, the master password is considered valid. 
 The encryption key for the user's data is derived from the master password, which is then used to decrypt and display the stored passwords.
 
 ### Flaws and Potential Improvements
  - Given all passwords are encrypted used the same key and IV is a big security flaw and should be improved if the time allowed.
  - Master Password is hashed using Argon2id using itself as salt, which should be randomly generated instead and not stored in plaintext form.
  - The encryption key derived from the master password should be stored securely and protected against potential attacks. Additionally, implementing a mechanism for changing the master password and re-encrypting all stored passwords would enhance security.
+ - Implementing monitoring and auditing mechanisms to detect and respond to unusual activities, such as multiple failed login attempts or suspicious database access, can improve overall security.
+
+## Conclusion
+The security mechanisms employed in this password manager provide a strong foundation for protecting user passwords. However, 
+there are vulnerabilities related to user behavior and key management that need to be addressed for even greater security. 
+Regular security assessments and updates are essential to maintaining the integrity of the system and ensuring that user data remains safe from potential threats.
