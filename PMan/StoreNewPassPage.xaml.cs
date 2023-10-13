@@ -1,3 +1,4 @@
+using System.Text;
 using ZstdSharp.Unsafe;
 
 namespace PMan;
@@ -23,8 +24,9 @@ public partial class StoreNewPassPage : ContentPage
 
         if (checksum != null)
         {
-            key = _keyIvCollection.GetKeys().HashKey;
-            iv = _keyIvCollection.GetKeys().HashKey;
+            var masterkey = StateManager.Instance.hashedPassword;
+            key = Encoding.UTF8.GetBytes(masterkey);
+            iv = _keyIvCollection.GetKeys().InitVect;
         }
         else
         {
@@ -33,9 +35,9 @@ public partial class StoreNewPassPage : ContentPage
         }
 
         
-        _keyIvCollection.InsertValues(key,iv);
-
-        _aesEncryptionHelper = new AesEncryptionHelper(key, iv);
+        _keyIvCollection.InsertValues(iv);
+        var stateman = StateManager.Instance;
+        _aesEncryptionHelper = new AesEncryptionHelper(stateman.hashedPassword, iv);
     }
 
 

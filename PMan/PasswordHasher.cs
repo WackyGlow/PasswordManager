@@ -24,7 +24,7 @@ namespace PMan
             {
                 rng.GetBytes(salt);
             }
-
+            
             // Create an Argon2id instance
             using (var hasher = new Argon2id(passwordBytes))
             {
@@ -42,13 +42,15 @@ namespace PMan
                 // Convert the hash bytes to a hexadecimal string
                 string hashHex = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
 
-                obj.HashedMasterPassword= hashHex;
+                var stateman = StateManager.Instance;
+                stateman.hashedPassword = hashHex;
                 obj.salt = salt;
 
                 return obj;
             }
         }
 
+        /*
         public bool VerifyMasterPassword(string masterPassword, HashedMPasswordEntity storedHash)
         {
             // Convert the provided master password string to bytes
@@ -76,7 +78,7 @@ namespace PMan
                 return storedHash.HashedMasterPassword.Equals(computedHashHex);
             }
         }
-
+        */
 
 
         // Utility function to convert a hexadecimal string to byte array

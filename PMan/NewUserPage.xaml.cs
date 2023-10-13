@@ -2,6 +2,7 @@ using Konscious.Security.Cryptography;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
+using PMan.Entity;
 
 namespace PMan;
 
@@ -24,6 +25,9 @@ public partial class NewUserPage : ContentPage
                 Console.WriteLine(password);
                 var _mpdb = new MasterPasswordCollection();
                 _mpdb.NewMPassword(password);
+                var _ivCol = new KeyIvCollection();
+                var ivGen = new AesKeyGenerator();
+                _ivCol.InsertValues(ivGen.GenerateIV());
                 await DisplayAlert("Alert", "Password Created", "OK");
             }
             else

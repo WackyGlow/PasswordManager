@@ -10,6 +10,7 @@ namespace PMan.Entity
     {
         public int Id { get; set; }
         public byte[] salt { get; set; }
-        public string HashedMasterPassword { get; set; }
+
+        //public string HashedMasterPassword { get; set; }
     }
 }

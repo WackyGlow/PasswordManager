@@ -25,7 +25,7 @@ public class KeyIvCollection
     }
 
 
-    public void InsertValues(Byte[] key, Byte[] iv)
+    public void InsertValues( Byte[] iv)
     {
 
         var checksum = GetKeys();
@@ -39,7 +39,6 @@ public class KeyIvCollection
             var obj = new KeyEntity()
             {
                 Id = 1,
-                HashKey = key,
                 InitVect = iv
             };
             _passwords.InsertOne(obj);

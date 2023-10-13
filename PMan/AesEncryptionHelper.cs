@@ -10,23 +10,25 @@ namespace PMan
 {
     internal class AesEncryptionHelper
     {
-        private static Byte[] _key;
-        private static Byte[] _iv;
+        private Byte[] _key;
+        private Byte[] _iv;
         private readonly KeyIvCollection _ctx;
 
-        public AesEncryptionHelper(Byte[] key, Byte[] iv)
+        public AesEncryptionHelper(string masterkey, Byte[] iv)
         {
+            _key = Encoding.UTF8.GetBytes(masterkey);
             _ctx = new KeyIvCollection();
             var checksum = _ctx.GetKeys();
             if (checksum != null)
             {
-                _key = checksum.HashKey;
+                _key = Encoding.UTF8.GetBytes(masterkey);
                 _iv = checksum.InitVect;
             }
             else
             {
-                _key = key;
+                _key = Encoding.UTF8.GetBytes(masterkey);
                 _iv = iv;
+                
             }
         }
 
@@ -34,7 +36,16 @@ namespace PMan
         {
             using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = _key;
+                //I have to use this work around because Argon2id gives a 512bit key, while AES only accepts 256bit. IE, I have Byte64 key, but i need Byte32 key.
+                byte[] argon2idKey = _key;
+                byte[] aesKey = new byte[32];
+
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    aesKey = sha256.ComputeHash(argon2idKey);
+                }
+
+                aesAlg.Key = aesKey;
                 aesAlg.IV = _iv;
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
@@ -55,9 +66,28 @@ namespace PMan
 
         public string Decrypt(string cipherText)
         {
+            try
+            {
+
+            }
+            catch (Exception a)
+            {
+                Console.WriteLine(a);
+                throw;
+            }
             using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = _key;
+                var stateman = StateManager.Instance;
+                //I have to use this work around because Argon2id gives a 512bit key, while AES only accepts 256bit. IE, I have Byte64 key, but i need Byte32 key.
+                byte[] argon2idKey = _key;
+                byte[] aesKey = new byte[32];
+
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    aesKey = sha256.ComputeHash(argon2idKey);
+                }
+
+                aesAlg.Key = aesKey;
                 aesAlg.IV = _iv;
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);

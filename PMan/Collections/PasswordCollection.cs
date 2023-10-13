@@ -24,16 +24,19 @@ public class PasswordCollection
 
         _passwordHasher = new PasswordHasher();
         _keys = new KeyIvCollection();
-        _aes = new AesEncryptionHelper(_keys.GetKeys().HashKey, _keys.GetKeys().InitVect);
+        var stateman = StateManager.Instance;  
+
+        _aes = new AesEncryptionHelper(stateman.hashedPassword, _keys.GetKeys().InitVect);
 
     }
 
 
     public List<UnHashedPassword> GetAllPasswords()
     {
-            var passwords = _passwords.Find<Password>(pw => true).ToList();
-            var decryptedList = new List<UnHashedPassword>();
-
+        var passwords = _passwords.Find<Password>(pw => true).ToList();
+        var decryptedList = new List<UnHashedPassword>();
+        try
+        {
             foreach (var ent in passwords)
             {
                 var decryptedlogin = new UnHashedPassword
@@ -46,8 +49,14 @@ public class PasswordCollection
                 decryptedList.Add(decryptedlogin);
             }
 
-
             return decryptedList;
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return new List<UnHashedPassword>();
+        }
     }
 
     public int GetPasswordsAmount()

@@ -20,14 +20,9 @@
             }
             else
             {
-                if (_mp.Login(password))
-                {
-                    await Navigation.PushAsync(new PasswordPage());
-                }
-                else
-                {
-                    await DisplayAlert("Alert", "NOT VERIFIED!", "OK");
-                }
+                var stateman = StateManager.Instance;
+                stateman.hashedPassword = password;
+                await Navigation.PushAsync(new PasswordPage());
             }
             
         }

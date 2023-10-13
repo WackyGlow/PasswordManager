@@ -53,12 +53,13 @@ public class MasterPasswordCollection
         _passwords.InsertOne(objEntity);
     }
 
+    /*
     public bool Login(string masterpassword)
     {
         var obj = _passwords.Find(pw => pw.Id == 1).FirstOrDefault();
         return _passwordHasher.VerifyMasterPassword(masterpassword, obj);
     }
-
+    */
 
 
 }
